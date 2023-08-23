@@ -1,4 +1,4 @@
-@server = https://super-invention-rrpgjv5wj3xj56-8080.app.github.dev
+@server = https://expert-guide-pp7r47vwjg7h9wp7-8080.app.github.dev
 ###
 GET {{server}}/api/instrumentos
 ###
@@ -7,7 +7,7 @@ Content-Type: application/json
 
 {"nombre": "Quena", "categoria": "Viento", "descripcion": "Como una flauta"}
 ###
-GET {{server}}/api/musicos
+GET {{server}}/api/musicos/1
 ###
 POST {{server}}/api/musicos
 Content-Type: application/json
