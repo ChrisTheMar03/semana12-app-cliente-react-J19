@@ -19,3 +19,6 @@ GET {{server}}/api/bandas
 
 ###
 GET {{server}}/api/integrantes
+
+###
+GET {{server}}/api/bandas/1/formacion

@@ -27,14 +27,18 @@ public class DatabaseLoader implements CommandLineRunner {
 		this.repositoryI.save(new Instrumento("Melódica","Viento","teclado pequeño de 2 octavas, sonorizado por soplido"));
 		Instrumento ins=new Instrumento("Voz", "Viento", ".");
 		this.repositoryI.save(ins);
-		this.repositoryI.save(new Instrumento("Guitarra Electrica", "Electronico", "."));
+		Instrumento gui=new Instrumento("Guitarra Electrica", "Electronico", ".");
+		this.repositoryI.save(gui);
+
 		this.repositoryI.save(new Instrumento("Bateria", "Percusion", "."));
 		this.repositoryM.save(new Musico("Daniel F"));
 		Musico m = new Musico("Freddy");
 		this.repositoryM.save(m);
-		this.repositoryM.save(new Musico("Brayan"));
+		Musico m2= new Musico("Brayan");
+		this.repositoryM.save(m2);
 		Banda banda = new Banda("Queen");
 		this.repositoryB.save(banda);
 		this.repositoryN.save(new Integrante(banda, m, ins));
+		this.repositoryN.save(new Integrante(banda, m2, gui));
 	}
 }
