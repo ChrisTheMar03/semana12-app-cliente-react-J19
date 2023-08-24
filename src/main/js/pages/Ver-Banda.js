@@ -35,27 +35,26 @@ const VerBanda=()=>{
             <Link to="/">Volver</Link>
             <hr/>
             <h2>Formacion</h2>
-            <table>
+            <table border="1">
                 <thead>
-                    <th>
-                        Musico
-                    </th>
-                    <th>Instrumento</th>
+                    <tr>
+                        <th>Musico</th>
+                        <th>Instrumento</th>
+                    </tr>
                 </thead>
                 <tbody>
                     {
                         integrantes.map((v,k)=>(
-                            <tr key={integrantes.ID}>
-                                <td>{integrantes.MUSICO}</td>
-                                <td>{integrantes.INSTRUMENTO}</td>
+                            <tr key={v.ID}>
+                                <td>{v.MUSICO}</td>
+                                <td>{v.INSTRUMENTO}</td>
                             </tr>
                         ))
                     }
-                    
-                    
                 </tbody>
             </table>
-            <Link to={`/ver-banda/${id}/nuevo-integrante`}>Nuevo Integrante</Link> |
+
+            <Link to={`/verbanda/${id}/nuevointegrante`}>Nuevo Integrante</Link> |
             <Link to="/">Volver</Link>
         </>
     )
